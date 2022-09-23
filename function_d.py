@@ -2,9 +2,11 @@ def max_value(numbers):
     """ This function returns the largest number
         in the list.
     """
-    ascending_numbers = sorted(numbers)
-    return ascending_numbers[-1]
-    
+    max_value = numbers[0]
+    for num in numbers:
+        if num > max_value:
+            max_value = num
+    return max_value
 
 
 if __name__ == "__main__":
